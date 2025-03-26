@@ -5,10 +5,9 @@ import com.devsuperior.bds01.entities.Department;
 import java.io.Serializable;
 
 public class DepartmentDTO implements Serializable {
-
-    private static final long serialVersionUID = -4556293352919854302L;
-
-    public Long id;
+    private static final long serialVersionUID = 1L;
+    
+	public Long id;
     public String name;
 
     public DepartmentDTO() {}
@@ -19,8 +18,8 @@ public class DepartmentDTO implements Serializable {
     }
 
     public DepartmentDTO(Department entity) {
-        this.id = entity.getId();
-        this.name = entity.getName();
+        id = entity.getId();
+        name = entity.getName();
     }
 
     public Long getId() {
@@ -38,4 +37,7 @@ public class DepartmentDTO implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+    
+    
 }
+
